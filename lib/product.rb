@@ -2,9 +2,13 @@ class Product
   attr_reader :title
 
   @@products = []
+  @product = {}
 
   def initialize(options={})
     @title = options[:title]
+    @price = options[:price]
+    @stock = options[:stock]
+    @product = { title: @title, price: @price, stock: @stock }
     add_to_products
   end
 
@@ -15,10 +19,10 @@ class Product
   private
 
   def add_to_products
-    unless @@products.include?(@title)
-      @@products << @title
+    unless @@products.any? { |product| product[:title] == @title }
+      @@products << @product
     else
-      raise DuplicateProductError, "#{@title} is a duplicate and can't be added."
+      raise DuplicateProductError, "#{@product} is a duplicate and can't be added."
     end
   end
 
