@@ -41,4 +41,9 @@ class Product
     end
   end
 
+  # Feature 2: restocking recommendation (if stock below 10 stocks)
+  def self.restocking_recommendations
+    @@products.each { |product| raise RestockingWarning, "Product #{product.title} has #{product.stock} stock and needs to be restocked." if product.stock < 10 }
+  end
+
 end

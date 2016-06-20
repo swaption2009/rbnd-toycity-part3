@@ -3,6 +3,7 @@ class Transaction
 
   @@id = 1
   @@purchases = []
+  @@customer_purchases = []
 
   def initialize(customer, product)
     @id = @@id
@@ -19,5 +20,11 @@ class Transaction
 
   def self.find(int)
     @@purchases[int-1]
+  end
+
+  # Feature 1: create purchase report by customer
+  def self.purchase_report(customer)
+    @@purchases.select { |purchase| @@customer_purchases << purchase if purchase.customer == customer }
+    puts @@customer_purchases.count
   end
 end

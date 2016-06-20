@@ -1,0 +1,14 @@
+1) How long did you spend working on this project?
+- about 6 hours (including 30-mins 1:1 tutoring)
+
+2) What was the most rewarding challenge you conquered?
+- calling class / instance methods from other class
+- create test script to develop a feature and write code to pass it
+
+3) What two additional features did you build? Why?
+- Feature 1: purchase report by customer
+- Feature 2: restocking recommendation
+These are the two common reports requested by typical business users
+
+4) Where do you still have room to grow?
+- create complex models and perform queries based on multiple criteria

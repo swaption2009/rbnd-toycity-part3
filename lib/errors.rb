@@ -6,3 +6,6 @@ end
 
 class OutOfStockError < StandardError
 end
+
+class RestockingWarning < StandardError
+end

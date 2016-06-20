@@ -63,5 +63,13 @@ puts Transaction.all.count # Should return 2
 transaction2 = Transaction.find(2)
 puts transaction2.product == nanoblock # Should return true
 
-walter.purchase(firehouse)
+#walter.purchase(firehouse)
 #Should return OutOfStockError: 'LEGO Firehouse Headquarter' is out of stock.
+
+# Feature 1: purchase report by customer
+Transaction.purchase_report(walter)
+#Should return 1
+
+# Feature 2: restocking recommendation (if stock below 10 stocks)
+Product.restocking_recommendations
+#Should return RestockingWarning: product 'name' needs to be restocked.
