@@ -1,5 +1,6 @@
 class Product
-  attr_reader :title, :price, :stock
+  attr_accessor :stock
+  attr_reader :title, :price
 
   @@products = []
 
@@ -19,17 +20,16 @@ class Product
   end
 
   def self.in_stock
-    product_in_stock = @@products.select { |product| product.stock > 0 }
-    puts product_in_stock.to_s
+    @@products.select { |product| product.stock > 0 }
   end
 
   def in_stock?
     @stock > 0
   end
 
-  # def include?(name)
-  #   name.stock > 0
-  # end
+  def reduce_stock
+    @stock -= 1
+  end
 
   private
 

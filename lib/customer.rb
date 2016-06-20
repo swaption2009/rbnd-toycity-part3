@@ -16,6 +16,15 @@ class Customer
     @@customers.find { |customer| customer.name == name }
   end
 
+  def purchase(item)
+    Transaction.new(self.name, item)
+    if item.stock > 0
+      print "#{self.name} has purchased #{item.title}."
+    else
+      raise OutOfStockError, "#{item.title} is out of stock."
+    end
+  end
+
   private
 
   def add_to_customers
