@@ -1,0 +1,87 @@
+commit 099d58e4900fcfd9a598fd4ac004f9b6afa402c4
+Author: swaption2009 <swaption2009@gmail.com>
+Date:   Mon Jun 20 14:11:00 2016 -0700
+
+    add 2 new features and reflection.txt
+    
+    # Feature 1: create a purchase report by customer
+    # Feature 2: create a restocking recommendation report
+
+commit e007be2271a0a6b36e184ffbaa302a660c4317bf
+Author: swaption2009 <swaption2009@gmail.com>
+Date:   Mon Jun 20 13:12:38 2016 -0700
+
+    Pass all tasks in app.rb
+
+commit 6eece914f5233672190c454b60dbb3189fabb188
+Author: swaption2009 <swaption2009@gmail.com>
+Date:   Sun Jun 19 10:59:02 2016 -0700
+
+    complete Product and Customer models
+    
+    Pending:
+    - include? (Product method)
+    - Transaction model
+
+commit 4fbb89d76aedbbc79e04b0ad5b2efd047ee87ace
+Author: swaption2009 <swaption2009@gmail.com>
+Date:   Sun Jun 19 00:45:36 2016 -0700
+
+    Change Products from array to array of hashes
+    
+    - add product hash (title, price, stock)
+    - check if title is already available in Products array of hashes
+
+commit f6f9a42b18e74f6d09619f6e5e3e3efb41562ec8
+Author: swaption2009 <swaption2009@gmail.com>
+Date:   Sat Jun 18 23:40:10 2016 -0700
+
+    add duplicate product error
+
+commit 15d5014211bf1d355824664297dbe8e2ed2b810d
+Author: swaption2009 <swaption2009@gmail.com>
+Date:   Sat Jun 18 22:39:13 2016 -0700
+
+    Add ability to create and count products
+
+commit fc2d17c24d98def6997cb0e71ff49aee8c3ee557
+Author: Jerome Chenette <jerome.chenette@gmail.com>
+Date:   Thu Apr 7 11:53:19 2016 -0700
+
+    New Rubric linked
+
+commit 14c21e10423a3f57bf17931b8ccdd803e240d5d1
+Author: Julia Van Cleve <julia@jmv.me>
+Date:   Tue Jan 12 01:23:47 2016 -0800
+
+    Output return values to the command line
+
+commit 50ecd4c9f92a4a76d414cb22a39a25c34e902525
+Author: Julia Van Cleve <julia@jmv.me>
+Date:   Fri Jan 8 12:02:31 2016 -0800
+
+    Removed zip file requirement
+
+commit f500dd1d9d903c1b9d49b3c9665f6a011616c546
+Author: Julia Van Cleve <julia@jmv.me>
+Date:   Thu Jan 7 09:04:43 2016 -0800
+
+    Fixed typo
+
+commit 1557be82014b78b0773f8f7bc129712e3a324286
+Author: Walter Latimer <walter@walterlatimer.com>
+Date:   Wed Jan 6 02:17:14 2016 -0500
+
+    Fix typos
+
+commit ec4113db8edbd9c69e15dc85b21875c3472ca3fa
+Author: Walter Latimer <walter@walterlatimer.com>
+Date:   Tue Jan 5 23:12:59 2016 -0500
+
+    Add LICENSE
+
+commit 1e66c23ba283ea433767f58d9a9e796282046d5c
+Author: Walter Latimer <walter@walterlatimer.com>
+Date:   Tue Jan 5 23:09:18 2016 -0500
+
+    Initial commit
