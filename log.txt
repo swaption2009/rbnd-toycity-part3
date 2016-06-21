@@ -1,3 +1,19 @@
+commit 5266ff995d09006ecd0342ad01880bfa6069fcfd
+Author: swaption2009 <swaption2009@gmail.com>
+Date:   Tue Jun 21 10:22:38 2016 -0700
+
+    submission
+    
+    - [suggestion] (transaction.rb line 22) change find purchase by id
+    - [required] add logic for checking stock before adding a transaction
+    - [required] move OutOfStockError from customer.rb to transaction.rb
+
+commit 8617ee0dc0e4742753a74fc9b1ec42adf29ab89b
+Author: swaption2009 <swaption2009@gmail.com>
+Date:   Mon Jun 20 14:11:35 2016 -0700
+
+    add git log
+
 commit 099d58e4900fcfd9a598fd4ac004f9b6afa402c4
 Author: swaption2009 <swaption2009@gmail.com>
 Date:   Mon Jun 20 14:11:00 2016 -0700
