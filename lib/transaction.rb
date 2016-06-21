@@ -10,7 +10,7 @@ class Transaction
     @@id += 1
     @customer = customer
     @product = product
-    @@purchases << self
+    add_to_transactions
     @product.reduce_stock
   end
 
@@ -19,7 +19,17 @@ class Transaction
   end
 
   def self.find(int)
-    @@purchases[int-1]
+    @@purchases.find { |purchase| purchase.id == int }
+  end
+
+  private
+
+  def add_to_transactions
+    if @product.stock > 0
+      @@purchases << self
+    else
+      raise OutOfStockError, "#{@product.title} is out of stock."
+    end
   end
 
   # Feature 1: create purchase report by customer
